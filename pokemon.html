@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Ndddd</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+
+}
+
+
+.main{
+    display: flex;
+    height: 660px;
+}
+
+.left-head{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: center;
+    border-right: 3px solid black;
+    height: 660px;
+    flex-direction: column;
+    
+    
+}
+
+.timers{
+    display: flex;
+    box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.24);
+    width: 500px;
+    height: 100px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.diplay{
+    display: flex;
+    background:linear-gradient(rgb(171, 250, 114), white);
+    height: 100px;
+    width: 500px;
+    font-size: 20px;
+    margin-top: 45px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    padding: 12px 18px 12px 18px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(66, 188, 248);
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover{
+    color: rgb(66, 188, 248);
+    background-color: white;
+    border: 1px solid rgb(66, 188, 248);
+}
+
+
+
+.button-s{
+    margin-top: 15px;
+    display: flex;
+    box-shadow: 2px 0px 6px 2px rgba(0,0,0,0.24);
+    height: 300px;
+    width: 290px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fis{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sec{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+.inpuss{
+    display: flex;
+
+}
+
+input{
+    border-radius: 25px;
+    width: 200px;
+    box-shadow: 2px 0px 2px 2px inset rgba(0,0,0,0.24);
+    margin-right: 6px;
+}
+
+input::placeholder{
+    font-size: 14px;
+}
+
+
+
+.right-head{
+    display: flex;
+    height: 660px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.the-ssod{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background:radial-gradient(white 90%, red);
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.24);
+}
+
+.quotes{
+    display: flex;
+    height: 100px;
+    width: 400px;
+    font-size: 26px;
+    background:linear-gradient(pink, white);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.24);
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-head">
+            <div class="timers"></div>
+            <div class="diplay">The question will show up here</div>
+            <div class="button-s">
+                <div class="fis">
+                    <button class="add" onclick="add()">Addition</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="sub" onclick="sub()">Subtraction</button>
+                </div>
+                <div class="sec">
+                    <button class="mult" onclick="mult()">Multiplication</button>&nbsp;&nbsp;&nbsp;
+                    <button class="divs" onclick="divs()">Divison</button>
+                </div>
+                  
+            </div>
+           
+
+        </div>
+        <div class="right-head">
+            <div class="timers"></div>
+            <div class="diplay">The question will show up here</div>
+            <div class="button-s">
+                <div class="fis">
+                    <button class="add" onclick="add()">Addition</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="sub" onclick="sub()">Subtraction</button>
+                </div>
+                <div class="sec">
+                    <button class="mult" onclick="mult()">Multiplication</button>&nbsp;&nbsp;&nbsp;
+                    <button class="divs" onclick="divs()">Divison</button>
+                </div>
+                  
+            </div>
+        
+    </div>
+    
+    <script ></script>
+</body>
+</html>

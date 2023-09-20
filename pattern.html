@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Hello</title>
+ </head>
+ <body></body>
+ <script>
+  
+    let i,j,temp
+    let n=prompt("Enter array size")
+    n=Number.parseInt(n)
+    let a=[];
+    let b=[]
+    for(i=0;i<n;i++){
+         b=prompt("Enter the numbers")
+         b=Number.parseInt(b)
+         console.log(typeof(b))
+        a.push(b)
+    }
+    for(i=0;i<n;i++){
+        document.write(a[i]+'&nbsp')
+    }
+    //calculation
+    for(i=0;i<n;i++){
+        if(a[i]<a[i+1]){
+            temp=a[i+1]
+            temp=Number.parseInt(temp)
+            b[i] = temp
+        }
+        else{
+            
+            b[i]=-1
+
+        }
+        document.write(b[i]+'&nbsp')
+    }
+       
+        
+    
+ </script>
+</html>

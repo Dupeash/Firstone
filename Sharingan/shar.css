@@ -1,0 +1,585 @@
+.container{
+    display: flex;
+    background-color: rgb(252, 208, 181);
+    height: 500px;
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 50px;
+    position: relative
+}
+
+.ez{
+    position: absolute;
+}
+
+.eyess{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    position: absolute;
+    
+}
+
+.container-2{
+    display: flex;
+    background-color: rgb(252, 208, 181);
+    height: 500px;
+    width: 500px;
+    transform: rotateY(180deg);
+   
+    margin-top: 50px;
+    position: relative;
+    
+
+}
+
+.eye{
+    background-color: rgb(255, 208, 181);
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 150px;
+    left: 90px;
+}   
+
+.iris{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 18px 15px 0px rgba(0,0,0,.45);
+    border: 4px solid black;
+    display: flex;
+    box-shadow: 0px 2px 4px 6px  inset rgba(0,0,0,.25);
+    position: absolute;
+    height: 190px;
+    width: 300px;
+    top: 10px;
+    border-radius: 50%;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 50px ;         
+
+}
+
+.ball{
+    background:linear-gradient(black 78%, white);
+    border-radius: 50%;
+    height: 178px;
+    width: 178px;
+    left: 49px;
+    top: -2px;
+    position: absolute;
+    border: 4px solid black;
+   
+
+   
+}
+
+
+
+
+
+.dup-ball { 
+        background:radial-gradient(red 50%,black);
+        border-radius: 50%;
+        height: 171px;
+        width: 171px;
+        left: 52px;
+        top: 2px;
+        animation-name: change; 
+        animation-duration: 1s;
+        border:5px solid black;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        animation-delay: 3s;
+        border: 4px solid black;
+
+        z-index: 2;
+        
+
+} 
+
+.dots{
+    border: 2px dotted black;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: absolute;
+    left:19px;
+    top: 17px;
+    z-index: 2;
+}
+
+.t1{
+    position: absolute;
+   
+    left: 76px;
+    height: 20px;
+    top: 10px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+.t2{
+    position: absolute;
+   
+    left: 22px;
+    height: 20px;
+    top: 106px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+.t3{
+
+    position: absolute;
+   
+    right: 22px;
+    height: 20px;
+    top: 106px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black
+
+}
+
+.tu1{
+    position: absolute;
+    
+    left: 6px;
+    height: 20px;
+    top: -4px;
+    width: 20px;
+    border-radius: 100% 0% 100% 0%/100% 0% 100% 0%;
+    background-color: black;
+    transform: rotate(45deg);
+
+}
+
+.tu2{
+    position: absolute;
+   
+    left: -9px;
+    height: 20px;
+    top: -5px;
+    width: 20px;
+    border-radius: 100% 0% 100% 0%/100% 0% 100% 0%;
+    background-color: black;
+    transform: rotate(119deg);
+
+}
+
+.tu3{
+    position: absolute;
+   
+    left: 0px;
+    height: 20px;
+    top: 8px;
+    width: 20px;
+    border-radius: 100% 0% 100% 0%/100% 0% 100% 0%;
+    background-color: black;
+    transform: rotate(0deg);
+
+
+}
+
+.hold{
+     
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    left: 74px;
+    top: 73px;
+    background:black;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+   
+
+.crystal {
+    border-radius: 50%;
+    height: 40px;
+    width: 30px;
+    right: 26px;
+    top: 30px;
+    position: absolute;
+    /* background-color: rgb(255, 255, 255); */
+    
+}
+
+.tomo-1 {
+    background:radial-gradient(red 50%,rgb(63, 63, 63));
+    border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    height: 160px;
+    width: 58px;
+    top: 10px;
+    transform: rotate(347deg);
+    
+    left: 61px;
+    position: absolute;
+    display: flex;
+   
+}
+
+
+
+
+
+.tomo-2 {
+    background:radial-gradient(red 60%,rgb(65, 65, 65));
+     border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+     height: 160px;
+    width: 58px;
+    transform: rotate(109deg);
+    left: 62px;
+    top: 8px;
+    position: absolute;
+   
+    
+
+   
+
+}
+
+.tomo-3 {
+    background:radial-gradient(red 50%,rgb(63, 63, 63));
+     border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+     height: 160px;
+     width: 58px;
+    transform: rotate(45deg);
+    left: 60px;
+    top: 10px;
+    position: absolute;
+    display: flex;
+
+}
+
+
+.tomo-1b {
+    background-color: transparent;
+    
+    
+    border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    height: 159px;
+    width: 58px;
+    transform: rotate(347deg);
+    left: 58px;
+    top: 6px;
+    position: absolute;
+    display: flex;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.tomo-2b {
+     background-color: transparent;
+     border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    height: 155px;
+    width: 58px;
+    transform: rotate(109deg);
+    left: 58px;
+    top: 6px;
+    position: absolute;
+    border: 4px solid rgb(3, 3, 3);
+    
+
+   
+
+}
+
+
+.tomo-3b {
+     background-color: transparent;
+     border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+     height: 160px;
+    width: 58px;
+    transform: rotate(45deg);
+    left: 57px;
+    top: 6px;
+    position: absolute;
+    display: flex;
+    border: 3px solid rgb(0, 0, 0);
+
+} 
+
+.to1{
+    height: 50px;
+    width: 50px;
+    border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    left: 66px;
+    transform: rotate(318deg);
+}
+
+.to2{
+    height: 50px;
+    width: 50px;
+    border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    background-color: black;
+    position: absolute;
+    top: 49px;
+    left: 49px;
+    transform: rotate(260deg);
+}
+
+.to3{
+    height: 50px;
+    width: 50px;
+    border-radius:  100%  0% 100% 0%/ 100% 0% 100% 0% ;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    transform: rotate(13deg);
+}
+
+.main{
+    
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    left: 79px;
+    top: 76px;
+    background:radial-gradient(red 35%,rgb(63, 63, 63));
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.tomos{
+    position: absolute;
+    animation-name: gem;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+    
+    border-radius: 50%;
+    height: 178px;
+    width: 178px;
+    
+
+    
+}
+
+@keyframes gem {
+    from{
+        transform: rotate(0deg) scale(0);
+    }
+
+    to{
+        transform: rotate(360deg) scale(1);
+    }
+
+    
+}
+
+
+@keyframes change {
+    from {
+        transform: scale(1) rotate(360deg);
+       
+        
+        background-color: red;
+    }
+    to{
+        transform: scale(0) rotate(0deg);
+        
+        background-color: black;
+        
+    }
+    
+}  
+
+
+.ultra-ball{
+    border-radius: 50%;
+    height: 178px;
+    width: 178px;
+    left: 0px;
+    position: absolute;
+    animation-name: movemes;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-delay: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: forwards;
+}
+
+
+@keyframes movemes 
+{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(40px);
+
+    }
+
+    50%{
+        transform: translateX(-30px);
+    }
+
+    75%{
+        transform: translateX(0px);
+        
+    }
+
+    100%{
+       
+            transform: translateX(0);
+       
+    }
+    
+}
+
+.ultra-ball-2{
+    border-radius: 50%;
+    height: 178px;
+    width: 178px;
+    position: absolute;
+    animation-name: movemeds;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-delay: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: forwards;
+   
+}
+
+
+@keyframes movemeds 
+{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(-45px);
+
+    }
+
+    50%{
+        transform: translateX(33px);
+    }
+
+    75%{
+        transform: translateX(0);
+        
+    }
+
+    100%{
+       
+            transform: translateX(0);
+       
+    }
+    
+}
+
+
+.ball2{
+     background:linear-gradient(black 78%, white);
+    border-radius: 50%;
+    height: 178px;
+    width: 178px;
+    left: 50px;
+    position: absolute;
+    transform: rotateY(180deg);
+    border : 3.5px solid black
+   
+
+   
+}
+
+
+.dup-ball2 { 
+    background:radial-gradient(red 50%,black);
+    border-radius: 50%;
+    height: 171px;
+    width: 171px;
+    left: 52px;
+    top: 2px;
+    animation-name: change; 
+    animation-duration: 1s;
+    border:5px solid black;
+    animation-iteration-count: 1;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    transform: rotateY(180deg);
+   
+
+    z-index: 2;
+    
+
+} 
+
+
+.face{
+    height: 700px;
+    width: 900px;
+    background: radial-gradient(rgb(252, 208 , 181) 60%, #f2e7da);
+    position: relative;
+    border-radius: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>fontstye
+        </title>
+        <link rel="stylesheet" type = "text/css" href="/css/pjpj.css">
+    </head>
+    <body>
+        <h1> I Love India</h1>
+        <h2> I am an Indian </h2>
+        <p>This is Pj</p>
+    </body>
+    <script>
+      //  let arrayN = [2,3,6,4,1]
+        let a =prompt('enter array sze');
+        a=Number.parseInt(a);
+        console.log(a);
+        let arrayN = [a];
+        console.log('the array size is '+arrayN)
+        let i =0;
+        alert('entering elements ....')
+        for( i=0;i<a;i++)
+        {
+            arrayN[i]=prompt(('enter element '+i));
+            arrayN[i] = Number.parseInt(arrayN[i])
+            console.log(typeof(arrayN[i]))
+            
+           
+           
+        }
+        console.log(arrayN);
+        //the main code
+       console.log('logic is down here')
+       //myChoice = 2;
+      // myChoice=prompt('what index element do you want to check?');
+       //myChoice=Number.parseInt(myChoice)
+    //    leftSum  = arrayN[myChoice -2] + arrayN[myChoice -1];
+    //    console.log(leftSum);
+    //    rightSum = arrayN[myChoice+1] + arrayN[myChoice+2];
+    //    console.log(rightSum);
+    //    if(leftSum==rightSum){
+    //     console.log('possible')
+    //    }
+    //    else{
+    //     console.log('not possible')
+    //    }
+    let leftSum = 0;
+    let rightSum = 0;
+    let  k =Math.round(arrayN.length/2);
+   // k = Number.parseInt(k)
+    console.log('the k value is '+k)    
+    for(i = 0 ; i < k ;i++){
+        console.log(i)
+        leftSum += arrayN[i];
+    }
+    console.log('the left sum value is '+leftSum);
+    alert('calcing right sum....')
+
+    let j = 0;
+
+    for(j=k;j<arrayN.length;j++){
+       // console.log('enterrde the loop')
+        rightSum += arrayN[j];
+    }
+    console.log('the right sum value is'+rightSum)
+
+    if(rightSum == leftSum){
+        console.log('yes possible the number is'+arrayN[(rightSum+leftSum)/arrayN.length])
+    }
+
+    else{
+        console.log('not possible')
+    }
+        
+    </script>
+</html>

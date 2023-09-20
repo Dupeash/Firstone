@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id = "first" placeholder="Enter OTP"  />
+    <button onclick="val()">Submit</button>
+    <script>
+         let getOtp  = Math.floor(1000+Math.random()*9000);
+        console.log(getOtp);    
+        function val(){
+        let myVal = document.getElementById('first').value;
+       
+        myVal=Number.parseInt(myVal)
+        console.log(myVal)
+        if(myVal == getOtp){
+            window.open('image.html');
+        }
+        else{
+            alert('type correct otp')
+        }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess it</title>
+        <style>
+
+            .header{
+                background-color: rgb(253, 50, 215);
+                height: 45px;
+                width: 100%;
+                color: white;
+                display: grid;
+                font-size: 26px;
+                align-items: center;
+                border: 2px solid black;
+                margin-bottom: 2px;
+                animation-name: bick;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes bick {
+                0%{
+                    color: white;
+                    background-color: rgb(253, 50, 215);
+                }
+                50%{
+                   background-color: white;
+                    color: rgb(253, 50, 215);
+
+                }
+                100%{
+                    color: white;
+                    background-color: rgb(253, 50, 215);
+
+                }
+                
+            }
+           
+            .inpus{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 55px;
+            }
+
+            .main{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 24px;
+                height: 130px;
+                background: linear-gradient(red,white);
+                border: 1px solid black;
+                border-radius: 15px;
+            }
+
+            .tin{
+                width: 700px;
+                margin-right: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 90px;
+                
+                background-color:rgb(255, 255, 255);
+                border: 1px solid black ;
+                box-shadow: 5px 5px 3px 4px rgba(0,0,0,0.25);
+            }
+
+            .tin::before{
+                width: 700px;
+                content: '';
+                display: flex;
+                position: absolute;
+                height: 90px;
+                align-items: center;
+                justify-content: center;
+                animation-name: tekila;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+             @keyframes tekila {
+                0%{
+                    width: 100px;
+                    left: 0;
+                    content: 'loading...';
+                    height: 90px;
+                    background-color: black;
+                }
+                50%{
+                    width: 700px;
+                    left: 0;
+                    content: 'loading..';
+                    height: 90px;
+                    background-color: rgb(255, 255, 255);
+                    opacity: 1;
+                }
+                75%{
+                    opacity: 1;
+                    width: 300px;
+                    content: '';
+                }
+                100%{
+                    width: 0px;
+                }
+                
+            } 
+
+            
+
+           
+            .gin{
+                width: 230px;
+                height: 30px;
+                margin-bottom: 6px;
+                border: none;
+                font-size: 16px;
+                border-radius: 8px;
+                box-shadow: 3px 2px 3px 4px rgba(0,0,0,0.25);
+            }
+
+            .support{
+                background-color: rgb(4, 205, 255);
+                color: white;
+                width: 150px;
+                height: 36px;
+                border-radius: 25px;
+                border: none;
+                cursor: pointer;
+                font-size: 22px;
+                box-shadow: 3px 2px 3px 4px rgba(0,0,0,0.25);
+            }
+
+            .support::placeholder{
+                color: rgb(197, 197, 197);
+                font-size: 22px;
+            }
+
+            .support:hover{
+                background-color: rgb(255, 255, 255);
+                color: rgb(4, 205, 255);
+
+            }
+
+            
+        </style>
+    </head>
+    <body >
+        <div class="header">&nbsp;Guess the number Between 1 to 100</div>
+        <div class="main">
+            <div class="inpus">
+                <input  class="gin" type="text" placeholder="&nbsp;Enter a number" />
+            <button  onclick="hola()" class="support">Submit</button>
+            </div>
+            
+            <div class="tin">The content appears here</div>
+        </div>
+        <div class="col"></div>
+        <script>
+        let randVal = Math.floor(Math.random()*100 +1)
+        console.log(randVal)
+        let sus
+        let count =0
+        let back
+
+
+
+        function hola(){
+            let display = document.querySelector('.tin')
+            let myVal = document.querySelector('.gin')
+            let gVal = myVal.value
+            display.innerHTML='The content appears here.'
+            display.style.background=''
+            console.log(document.body.style)
+            display.style.animationName = 'tekila'
+            if(gVal>100 || gVal<1 || gVal==''){
+                display.innerHTML='Enter Carefully'
+                display.style.background = 'red'
+                back= display.style.background
+               
+            }       
+            else if(gVal>randVal){
+               sus='Enter smaller number' 
+               display.innerHTML=sus
+               display.style.background = 'rgb(255, 255, 255);'
+               back= display.style.background
+
+            }
+            else if(gVal<randVal){
+                sus='Enter Greater number'
+                display.innerHTML=sus
+                display.style.background = 'rgb(255, 255, 255);'
+                back= display.style.background
+            }
+            else{
+                sus=`Hooray you guessed it right <br> the number is ${randVal} and score is ${count} `
+                 display.innerHTML=sus
+                display.style.background = 'lightgreen'
+                back= display.style.background
+            }
+            count++
+        }
+           
+
+
+
+        </script>
+    </body>
+</html>

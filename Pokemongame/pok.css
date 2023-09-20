@@ -1,0 +1,238 @@
+.main{
+    display: flex;
+    height: 660px;
+    position: relative;
+}
+
+.left-head{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: center;
+    
+    height: 660px;
+    flex-direction: column;
+    
+    
+}
+
+
+.right-head{
+    display: flex;
+    height: 660px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.hp1{
+    display: flex;
+   box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.24); 
+    width: 500px;
+    height: 70px;
+    font-size: 25px;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+
+.diplay{
+    display: flex;
+    z-index: 12;
+    height: 500px;
+    width: 500px;
+    font-size: 100px;
+    margin-top: 45px;
+  
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    padding: 22px 28px 22px 28px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    background:white;
+    border: 1px solid coral;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.15s;
+
+
+}
+
+button:hover{
+    color: white;
+    background:linear-gradient(coral,white);
+    border: 1px solid black;
+}
+
+
+
+.button-s{
+    margin-top: 50px;
+    display: flex;
+    box-shadow: 2px 0px 6px 2px rgba(0,0,0,0.24);
+    height: 300px;
+    width: 600px;
+    align-items:stretch;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+
+}
+
+.fis{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sec{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
+
+
+/* for player 2 */
+
+
+
+.hp2{
+    display: flex;
+    box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.24);
+    width: 500px;
+    height: 70px;
+    font-size: 25px;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 95px;
+}
+
+
+.diplay1{
+    display: flex;
+    z-index: 12;
+    height: 500px;
+    width: 500px;
+    font-size: 100px;
+    margin-top: 45px;
+  
+    align-items: center;
+    justify-content: center;
+    margin-left: 95px;
+
+}
+
+button{
+    padding: 22px 28px 22px 28px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    background:white;
+    border: 1px solid rgb(151, 247, 254);
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.15s;
+
+
+}
+
+button:hover{
+    color: black;
+    background:linear-gradient(rgba(151,247,254),white);
+    border: 1px solid black;
+}
+
+
+
+.button-s1{
+    margin-top: 50px;
+    display: flex;
+    box-shadow: 2px 0px 6px 2px rgba(0,0,0,0.24);
+    height: 300px;
+    width: 600px;
+    align-items:stretch;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    
+
+}
+
+.fis1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sec1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
+
+/* .black{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: none;
+    z-index: 8;
+}
+
+.white{
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 700px;
+    font-size: 32px;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.24); 
+}  */
+
+.screen{
+    display: flex;
+    position: absolute;
+    height: 303px;
+    left: 100px;
+    width: 1200px;
+    top: 106px;
+    font-size: 100px;
+    background:linear-gradient(white 60%, rgb(137, 201, 247));
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
