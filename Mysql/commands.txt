@@ -1,0 +1,24 @@
+SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, COLUMN_DEFAULT
+  FROM INFORMATION_SCHEMA.COLUMNS
+  WHERE table_name = 'tbl_name'
+  [AND table_schema = 'db_name']
+  [AND column_name LIKE 'wild']
+
+SHOW COLUMNS
+  FROM tbl_name
+  [FROM db_name]
+  [LIKE 'wild'] 
+
+
+select database();//shows database
+
+use firstone;//database changed 
+
+alter table one add id int table_name; 
+
+alter table one change id id int(10)auto_increment primary key;
+
+
+
+
+

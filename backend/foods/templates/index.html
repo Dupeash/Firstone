@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static  %}
+  
+{% block content %}
+<header>
+  <h2 class="text-gray-700 text-6xl font-semibold"><a href=" {% url 'list-home' %}">Recipes</a></h2>
+  <h3 class="text-2xl font-semibold">For Legends</h3>
+</header>
+
+<div>
+  <h4 class="font-light mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+
+  
+
+  <div class="mt-8 grid lg:grid-cols-3 gap-10">
+
+    {% for rec in Receps %}
+        <!-- cards go here -->
+    <div class=" bg-white rounded-xl relative shadow-md overflow-hidden  hover:shadow-2xl cursor-pointer card">
+      <img src="{% static 'pngs/win11.png' %}" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+      <div class="m-4">
+        <span class="font-bold">{{rec.RecipeName}}</span>
+        <span class="block text-gray-500 text-sm">{{rec.MadeBy }}</span>
+      </div>
+      <div class="bg-amber-50 text-amber-700 text-xs uppercase
+      font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+        <span>{{rec.MakingTime}}</span>
+      </div>
+
+    </div>
+    {% endfor %}
+    
+
+
+    
+
+
+  </div>
+
+  <h4 class="font-light mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+  <div class="mt-8 ">
+    <!-- cards go here -->
+   
+</div>
+
+<div class="flex justify-center">
+  <div class="bg-secondary-100 text-secondary-300 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider">Load more</div>
+</div>    
+</main>
+</div>
+
+
+{% endblock content %}
+  
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static tailwind_tags %}
+<head>
+  
+    <title>Document</title>
+    {% tailwind_css %}
+</head>
+<body class="bg-black">
+
+
+
+    {% for i in posts%}
+    <div>
+        
+        Heading:{{i.heading}}
+        <br>
+        Desciption:{{i.description}}
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endfor%}
+
+    
+</body>
+</html>

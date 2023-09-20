@@ -1,0 +1,62 @@
+python -m pip install django-tailwind[reload]
+
+INSTALLED_APPS = [
+  # other Django apps
+  'tailwind',
+]
+
+
+>python manage.py tailwind init 
+
+INSTALLED_APPS = [
+  # other Django apps
+  'tailwind',
+  'theme'
+]
+
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+{% load static tailwind_tags %}
+...
+<head>
+   ...
+   {% tailwind_css %}
+   ...
+</head>
+
+
+INSTALLED_APPS = [
+  # other Django apps
+  'tailwind',
+  'theme',
+  'django_browser_reload'
+]
+
+
+MIDDLEWARE = [
+  # ...
+  "django_browser_reload.middleware.BrowserReloadMiddleware",
+  # ...
+]
+
+
+from django.urls import include, path
+urlpatterns = [
+    ...,
+    path("__reload__/", include("django_browser_reload.urls")),
+]
+
+
+
+python manage.py tailwind start
+
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
+
+
+
